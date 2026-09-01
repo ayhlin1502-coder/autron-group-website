@@ -1,0 +1,19 @@
+# OneDrive local build exclusions for this project.
+# This file is advisory and helps document what should not be synced.
+# The most reliable fix is to move the project out of a OneDrive-synced folder.
+
+.next/
+.next/**
+node_modules/
+node_modules/**
+out/
+out/**
+.cache/
+coverage/
+dist/
+build/
+*.log
+*.pack.gz
+
+# Optional: keep source code synced, but avoid large generated directories
+# Best practice: store this project under C:\Projects\... instead of OneDrive-synced Desktop.
