@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion, useInView } from "framer-motion";
+import type { SVGMotionProps } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
@@ -321,7 +322,7 @@ export function AnimatedPath({
   delay = 0,
   duration = DURATION.story,
   ...rest
-}: React.SVGProps<SVGPathElement> & { delay?: number; duration?: number }) {
+}: SVGMotionProps<SVGPathElement> & { delay?: number; duration?: number }) {
   const reduceMotion = useReducedMotion();
   return (
     <motion.path
