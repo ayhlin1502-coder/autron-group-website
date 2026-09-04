@@ -48,13 +48,15 @@ Do not describe:
 - Framer Motion
 - Lucide React
 - npm with `package-lock.json`
-- Playwright is installed, but no automated test suite has been created
+- Playwright with a Chromium smoke-test suite
 
 Important package scripts:
 
 - `npm run dev` — local development at `http://127.0.0.1:3100`
 - `npm run lint` — source quality check
+- `npm run typecheck` — TypeScript check without generating build artifacts
 - `npm run build` — production build
+- `npm run test:e2e` — Playwright route and navigation smoke tests
 - `npm run start` — serve an existing production build
 
 Port `3100` is intentional. Another local project at
@@ -72,18 +74,17 @@ Implemented:
 - `/quarter-innovations`
 - `/global-network`
 - `/contact`
+- `/privacy-policy` — route and noindex placeholder framework; final legal content required
+- `/cookie-policy` — route and noindex placeholder framework; final legal content required
 - `/api/contact`
 - `/robots.txt`
 - `/sitemap.xml`
 
 Planned but not implemented:
 
-- `/our-businesses`
-- `/privacy-policy`
-- `/cookie-policy`
 - all `/zh-tw/...` and `/en/...` localized routes
 
-The footer currently links to the missing privacy and cookie pages, so those links return 404 until the pages are added.
+The standalone `/our-businesses` overview route was removed at the owner's request. The header business menu now routes directly to the four business destinations.
 
 ## 5. Implemented frontend components
 
@@ -119,6 +120,10 @@ Completed recovery work:
 3. Fixed a Framer Motion / SVG TypeScript incompatibility in `src/components/motion.tsx`.
 4. Added polling to the development command to avoid the local macOS file-watcher limit.
 5. Assigned the Autron project to port `3100` so it does not conflict with the older test website on port `3000`.
+6. Added legal-policy placeholder routes; the temporary `/our-businesses` overview route was later removed at the owner's request.
+7. Replaced empty footer links with real destinations or explicit planned states.
+8. Updated sitemap and robots local fallbacks to port `3100`.
+9. Added Playwright route, desktop navigation, mobile navigation, sitemap, robots, and empty-link smoke tests.
 
 ## 7. Git history
 
@@ -151,7 +156,8 @@ Verified on 2026-09-02:
 - TypeScript check: passed
 - Next.js production build: passed
 - development server: passed
-- Home, About, four business pages, Global Network, Contact, robots, and sitemap: returned HTTP 200
+- Home, About, four business pages, Global Network, Contact, the two legal placeholders, robots, and sitemap: returned HTTP 200
+- Playwright smoke tests: 15 passed
 
 Production build output contains static pages plus the dynamic contact API route.
 
@@ -235,52 +241,55 @@ Still required:
 - Open Graph / social preview configuration
 - complete bilingual sitemap
 - structured data appropriate to confirmed facts
-- Privacy Policy page
-- Cookie Policy page
+- final approved Privacy Policy content (the route and placeholder framework now exist)
+- final approved Cookie Policy content (the route and placeholder framework now exist)
 - consent strategy if analytics or advertising pixels are added
 - GA4 / GTM / Search Console / Bing setup, if approved
 - production domain and `NEXT_PUBLIC_SITE_URL`
 - staging and production environments
 
-The current sitemap defaults to `http://localhost:3000` if
-`NEXT_PUBLIC_SITE_URL` is not supplied. This must be set before launch and should be reviewed together with the local port change.
+The local sitemap and robots fallback now use `http://127.0.0.1:3100` when
+`NEXT_PUBLIC_SITE_URL` is not supplied. The production environment must still set the approved public URL before launch.
 
-## 13. Content still requiring owner confirmation
+## 13. Content confirmation status
 
-- final logo and locked brand color palette
-- final hero slogan
-- official contact details and social links
+### Owner confirmation recorded on 2026-09-02
+
+The owner confirmed that the factual content currently rendered by the local website is approved for continued use. This includes the published homepage and Autron Trade statistics, the Taiwan and Australia office labels, the displayed phone numbers and email address, and the capability wording currently shown on the implemented pages.
+
+This approval applies only to content already rendered outside `[CONTENT REQUIRED]` placeholders. It does not authorise replacing existing placeholders or upgrading a qualified statement into a stronger factual claim.
+
+The following still require confirmation before new content is added or an existing placeholder is replaced:
+
+- final source logo files and locked brand color palette
+- official social profile URLs
 - AuzCare relationship for every named brand:
   - represented brand
   - partner brand
   - manufacturer
   - own brand
-- whether AutronGo operates its own logistics capacity or coordinates third-party networks
+- any change from Autron Go's currently approved logistics-network coordination wording to an in-house capacity claim
 - confirmed versus developing status for each market
 - approved product claims and regulated wording
-- Privacy Policy and Cookie Policy requirements
+- final Privacy Policy and Cookie Policy wording
 - final recipients and routing rules for enquiries
 
 The Global Network page intentionally contains `[CONTENT REQUIRED]` placeholders until market status is confirmed.
 
 ## 14. Testing gaps
 
-Playwright is installed, but there is currently:
+Playwright route and navigation smoke tests now exist. Remaining test gaps include:
 
-- no `playwright.config.*`
-- no end-to-end test suite
 - no automated accessibility test
 - no responsive screenshot regression test
 - no CI workflow
 
 Recommended minimum before launch:
 
-- smoke test for all routes
-- desktop and mobile navigation test
 - language switching test after localization
 - contact form validation and delivery test
 - keyboard navigation and focus test
-- 404-link check
+- comprehensive internal-link and 404 check beyond the current homepage empty-link assertion
 
 ## 15. Sites status
 
@@ -314,10 +323,10 @@ contact API requirements, domain plan, and Enterprise workspace access policy.
 ### Phase C — make the foundation production-ready
 
 1. upgrade vulnerable dependencies in a controlled branch
-2. add missing Privacy and Cookie pages
+2. replace Privacy and Cookie placeholders with company-approved legal content
 3. implement real contact delivery, bot protection, and production rate limiting
 4. complete metadata, canonical URLs, structured data, and social previews
-5. add automated smoke and accessibility tests
+5. extend the current smoke tests with automated accessibility coverage
 
 ### Phase D — bilingual and CMS
 
@@ -353,12 +362,11 @@ Then give Codex this instruction:
 
 ## 18. Handoff verification checklist
 
-- [ ] New Enterprise account can open the local project folder
-- [ ] New account has permission to use Codex locally
+- [x] New Enterprise account can open the local project folder
+- [x] New account has permission to use Codex locally
 - [ ] New account has permission to use required plugins
-- [ ] `git status` shows the expected branch and no unexplained changes
-- [ ] `npm run dev` opens Autron Group at port 3100
-- [ ] New account has read this handoff and the four source documents
+- [x] `git status` shows the expected branch and no unexplained changes
+- [x] `npm run dev` opens Autron Group at port 3100
+- [x] New account has read this handoff and the four source documents
 - [ ] Private Git remote ownership has been decided
 - [ ] Business facts and brand relationships have named approvers
-

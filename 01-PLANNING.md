@@ -74,8 +74,8 @@
 Our Businesses Mega Menu:
  International Trading   → Autron Trade
  Brand Distribution      → AuzCare
- International Logistics → AutronGo
- Technology & Marketing  → Quarter Innovations
+ International Logistics → Autron Go
+ Technology & Marketing  → Quarter Innovation
 ```
 需求:Sticky、Responsive、Minimal、快速載入。
 
@@ -117,7 +117,7 @@ Our Businesses Mega Menu:
 [Positioning] 一段定位說明
 [Services/Categories] 服務或產品分類(使用CMS管理,標明狀態如「洽談中」「已合作」)
 [Target Markets](如適用)
-[Trade+Logistics Integration Callout](AutronGo專屬)
+[Trade+Logistics Integration Callout](Autron Go專屬)
 [CTA Block] 該Business專屬CTA
 [Cross-link to other Business Units]
 ```
@@ -172,8 +172,8 @@ Body: 高可讀性,建議中文 16px 起
 | Global(首頁/Footer) | Partner With Autron |
 | Autron Trade | Discuss a Trading Opportunity / Become a Supplier / Become a Distributor |
 | AuzCare | Become a Brand Partner / Retail & Distribution Enquiry |
-| AutronGo | Request a Freight Quote |
-| Quarter Innovations | Start a Project |
+| Autron Go | Request a Freight Quote |
+| Quarter Innovation | Start a Project |
 | Contact | Submit Enquiry(Smart Routing Form) |
 
 ---
@@ -280,6 +280,6 @@ Vercel(主機)+ Cloudflare(DNS/WAF/DDoS防護/Turnstile)。此組合對 Next.js 
 以下資訊尚未提供,實作時將以佔位方式標示,待你確認後再鎖定:
 - Logo 檔案與品牌主色
 - AuzCare 各品牌實際合作狀態(Represented/Partner/Manufacturer/Own Brand)
-- AutronGo 服務是否為自有運力或第三方物流網絡協調
+- Autron Go 服務是否為自有運力或第三方物流網絡協調
 - 各市場(中國/美國/日本/越南)實際合作階段(洽談中 vs 已合作)
 - Hero Slogan 最終選定版本(已建議 #1,待你確認)

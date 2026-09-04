@@ -2,13 +2,13 @@ import { BusinessPage, type BusinessPageData } from "@/components/business-page"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Quarter Innovations | Technology & Digital Marketing",
-  description: "Quarter Innovations provides website development and digital marketing capabilities to help businesses move forward."
+  title: "Quarter Innovation | Technology & Digital Marketing",
+  description: "Quarter Innovation provides website development and digital marketing capabilities to help businesses move forward."
 };
 
 const data: BusinessPageData = {
-  name: "Quarter Innovations",
-  eyebrow: "Quarter Innovations / Technology & Marketing",
+  name: "Quarter Innovation",
+  eyebrow: "Quarter Innovation / Technology & Marketing",
   hero: "Technology That Moves Business Forward.",
   positioning: "A digital technology partner focused on practical website development and digital marketing for businesses building their next stage of growth.",
   serviceGroups: [

@@ -18,7 +18,7 @@ const marketCategories = [
 export default function GlobalNetworkPage() {
   return (
     <main>
-      <section className="bg-surface-off px-lg py-4xl" aria-labelledby="network-hero-heading">
+      <section className="flex h-[70vh] items-center bg-surface-off px-lg py-4xl md:h-[75vh] lg:h-[78vh]" aria-labelledby="network-hero-heading">
         <div className="mx-auto max-w-content">
           <p className="mb-lg text-sm font-semibold uppercase tracking-[0.2em] text-primary">Markets We Serve</p>
           <h1 id="network-hero-heading" className="max-w-4xl font-display text-display font-bold text-navy">Global Network</h1>

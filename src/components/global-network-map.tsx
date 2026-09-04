@@ -67,7 +67,7 @@ export function GlobalNetworkMap({ markets }: { markets: Market[] }) {
             </motion.div>
           ))}
         </div>
-        <Link href="/global-network" className="mt-sm flex items-center justify-center gap-xs rounded-md border border-line px-lg py-sm text-sm font-semibold text-primary transition-all duration-200 hover:bg-primary hover:text-white focus-visible:bg-primary focus-visible:text-white [&_span]:transition-transform [&_span]:duration-200 hover:[&_span]:translate-x-1">
+        <Link href="/autron-trade" className="mt-sm flex items-center justify-center gap-xs rounded-md border border-line px-lg py-sm text-sm font-semibold text-primary transition-all duration-200 hover:bg-primary hover:text-white focus-visible:bg-primary focus-visible:text-white [&_span]:transition-transform [&_span]:duration-200 hover:[&_span]:translate-x-1">
           擴展全球市場 <span aria-hidden="true">→</span>
         </Link>
       </div>

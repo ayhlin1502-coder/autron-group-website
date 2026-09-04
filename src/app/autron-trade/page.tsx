@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { Breadcrumb } from "@/components/breadcrumb";
 import { HeroVisual } from "@/components/hero-visual";
 import { ProductCarousel, type ProductCategory } from "@/components/product-carousel";
 import { FlagIcon, ShipIcon, BoxIcon, CheckIcon } from "@/components/brand-graphics";
@@ -113,8 +112,6 @@ const solutionHighlights = [
 export default function AutronTradePage() {
   return (
     <main className="bg-white text-charcoal">
-      <Breadcrumb items={[{ label: "首頁", href: "/" }, { label: "我們的事業", href: "/#business-platforms" }, { label: "Autron Trade" }]} />
-
       {/* Hero */}
       <section aria-labelledby="trade-hero-heading" className="bg-white px-0 pb-0 pt-0">
         <HeroVisual
@@ -198,7 +195,7 @@ export default function AutronTradePage() {
         <div className="relative h-[280px] lg:h-auto">
           <Image src="/business-autrongo.png" alt="Air and ocean freight for Autron Trade" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
         </div>
-        <div className="bg-navy px-[clamp(1.5rem,3vw,3rem)] py-4xl text-white">
+        <div className="bg-[#1453b8] px-[clamp(1.5rem,3vw,3rem)] py-4xl text-white">
           <div className="max-w-xl">
             <Reveal>
               <p className="mb-sm text-sm font-semibold uppercase tracking-[0.18em] text-white/65">WHY CHOOSE AUTRON TRADE</p>
@@ -320,8 +317,8 @@ export default function AutronTradePage() {
 
       {/* CTA */}
       <section aria-labelledby="trade-cta-heading" className="relative overflow-hidden bg-gradient-to-r from-navy to-navy-light px-[clamp(1.5rem,3vw,3rem)] py-4xl text-white">
-        <Reveal className="relative mx-auto max-w-3xl text-center">
-          <h2 id="trade-cta-heading" className="font-display text-3xl font-bold text-white sm:text-4xl">與 Autron Trade 一起，讓優質產品走向世界</h2>
+        <Reveal className="relative mx-auto max-w-5xl text-center">
+          <h2 id="trade-cta-heading" className="font-display text-3xl font-bold text-white sm:text-4xl lg:whitespace-nowrap">與 Autron Trade 一起，讓優質產品走向世界</h2>
           <p className="mx-auto mt-sm max-w-xl text-base font-bold text-white/80">無論您是品牌方、供應商或經銷夥伴，期待與您攜手共創全球市場。</p>
           <Link href="/contact" className="group mt-lg inline-flex items-center justify-center gap-xs rounded-md bg-white px-lg py-sm text-sm font-bold text-primary transition-colors duration-200 hover:bg-white/90">
             立即洽詢合作 <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1">→</span>

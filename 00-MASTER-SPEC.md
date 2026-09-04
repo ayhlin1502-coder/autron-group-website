@@ -12,7 +12,7 @@ Corporate Group Portal + Business Lead Generation Platform + Long-term Digital A
 1. 建立 Autron Group 澳創集團整體品牌形象
 2. 清楚呈現集團旗下主要事業與品牌
 3. 讓不同類型客戶快速找到適合的服務
-4. 將流量有效分流到：Autron Trade / AuzCare / AutronGo / Quarter Innovations
+4. 將流量有效分流到：Autron Trade / AuzCare / Autron Go / Quarter Innovation
 5. 建立澳洲、台灣及全球市場之間的跨境商業定位
 6. 支援未來新增品牌、產品、服務、市場與新事業
 7. 建立 B2B 商業合作、品牌代理、經銷、物流與科技服務詢問入口
@@ -38,19 +38,19 @@ Autron Holdings
     │     ├── Autron Trade
     │     └── AuzCare
     ├── Autron Logistics
-    │     └── AutronGo
+    │     └── Autron Go
     └── Autron Tech
-          └── Quarter Innovations
+          └── Quarter Innovation
 ```
-四大對外 Business Units：Autron Trade / AuzCare / AutronGo / Quarter Innovations。Autron Holdings 不需首頁大量曝光，放在 About → Group Structure。
+四大對外 Business Units：Autron Trade / AuzCare / Autron Go / Quarter Innovation。Autron Holdings 不需首頁大量曝光，放在 About → Group Structure。
 
 ## 3. WEBSITE ARCHITECTURE
-第一階段：Home / About Us / Our Businesses（Autron Trade, AuzCare, AutronGo, Quarter Innovations）/ Global Network / Contact
+第一階段：Home / About Us / Our Businesses（Autron Trade, AuzCare, Autron Go, Quarter Innovation）/ Global Network / Contact
 未來擴充：News & Insights / Case Studies / Projects / Careers / Supplier Portal / Distributor Portal / Partner Portal / Investor Relations
 第一版不做：大型電商 / 會員系統 / ERP / 複雜CRM / 大型Partner Portal
 
 ## 4. GLOBAL NAVIGATION
-Desktop：左側Logo，Nav含 Home/About/Our Businesses/Global Network/Contact，Our Businesses用Dropdown或Mega Menu（International Trading→Autron Trade、Brand Distribution→AuzCare、International Logistics→AutronGo、Technology & Marketing→Quarter Innovations），右側繁中/EN + CTA（Partner With Us 或 Contact Us）。需Sticky/Responsive/Minimal/Professional/快速載入。
+Desktop：左側Logo，Nav含 Home/About/Our Businesses/Global Network/Contact，Our Businesses用Dropdown或Mega Menu（International Trading→Autron Trade、Brand Distribution→AuzCare、International Logistics→Autron Go、Technology & Marketing→Quarter Innovation），右側繁中/EN + CTA（Partner With Us 或 Contact Us）。需Sticky/Responsive/Minimal/Professional/快速載入。
 Mobile：Hamburger Menu，同樣提供中文/EN與主要CTA。
 
 ## 5. HOMEPAGE STRUCTURE
@@ -61,8 +61,8 @@ Section 1 Hero：主標 Connecting Australia, Taiwan & Global Markets；副標�
 標題：One Group. Four Business Platforms.（一個集團，四大核心事業）
 01 International Trade — Autron Trade：Import, export, sourcing and international market development. CTA: Explore Autron Trade
 02 Brand Distribution — AuzCare：Brand representation, health & wellness distribution and omnichannel retail. CTA: Explore AuzCare
-03 International Logistics — AutronGo：International freight, consolidation and cross-border logistics solutions. CTA: Explore AutronGo
-04 Technology & Marketing — Quarter Innovations：Website development, digital marketing and future AI-enabled business solutions. CTA: Explore Quarter Innovations
+03 International Logistics — Autron Go：International freight, consolidation and cross-border logistics solutions. CTA: Explore Autron Go
+04 Technology & Marketing — Quarter Innovation：Website development, digital marketing and future AI-enabled business solutions. CTA: Explore Quarter Innovation
 Desktop可用Horizontal Scroll/Sticky Scroll Story/Animated Business Panels；Mobile改Vertical Stack，不可造成操作困難。
 
 ## 7. ABOUT AUTRON GROUP（首頁簡短版）
@@ -75,7 +75,7 @@ Desktop可用Horizontal Scroll/Sticky Scroll Story/Animated Business Panels；Mo
 首頁核心能力區：Market Access / Product & Brand Distribution / International Supply Chain / Digital Growth。視覺流程：Product→Market Entry→Distribution→Logistics→Marketing，呈現整合能力而非單一服務。
 
 ## 10. HOMEPAGE LEAD ROUTING
-依訪客需求分流：我要出口產品→Autron Trade；我要找台灣代理商→AuzCare/Autron Trade；我要進口澳洲商品→Autron Trade；我要找品牌經銷合作→AuzCare；我要國際運輸→AutronGo；我要做企業網站→Quarter Innovations；我要找數位行銷→Quarter Innovations；我要成為供應商→Supplier Partnership；我要成為經銷商→Distribution Partnership。首頁CTA架構須支援此Routing。
+依訪客需求分流：我要出口產品→Autron Trade；我要找台灣代理商→AuzCare/Autron Trade；我要進口澳洲商品→Autron Trade；我要找品牌經銷合作→AuzCare；我要國際運輸→Autron Go；我要做企業網站→Quarter Innovation；我要找數位行銷→Quarter Innovation；我要成為供應商→Supplier Partnership；我要成為經銷商→Distribution Partnership。首頁CTA架構須支援此Routing。
 
 ## 11. AUTRON TRADE PAGE（/autron-trade）
 定位：International Trade / Global Sourcing / Import-Export / Market Development
@@ -103,7 +103,7 @@ CTA：Become a Brand Partner / Retail & Distribution Enquiry
 Hero：Move Further. Move Smarter. 或 Your Gateway to International Logistics.
 服務：International Freight / Air Freight / Sea Freight / Cross-border Consolidation / Import-Export Logistics / Customs Coordination / Business Shipping Solutions
 若由第三方物流合作網絡提供，不可宣稱In-house，需用「Coordinated through our logistics network.」市場資料由CMS管理。
-需凸顯Trade+Logistics Integration，例如「Trade with Autron. Ship with AutronGo.」
+需凸顯Trade+Logistics Integration，例如「Trade with Autron. Ship with Autron Go.」
 CTA：Request a Freight Quote / Talk to Our Logistics Team
 
 ## 14. QUARTER INNOVATIONS PAGE（/quarter-innovations）
@@ -141,7 +141,7 @@ Super Admin/Administrator/Editor/Marketing/Viewer，採Role-Based Access Control
 需Professional/Premium/Modern/International/Innovative但保持企業可信度。方向：International Business Group × Modern Technology Company × Premium Corporate Brand。不要廉價Template/大量漸層/過度圓角/每區都是Card/大量Stock Photo/過度未來科技Neon Style。
 
 ## 23. MOTION & SCROLL EXPERIENCE
-加入Smooth Scroll/Scroll-triggered Reveal/Text Reveal/Image Reveal/Horizontal Scroll/Sticky Storytelling/Subtle Parallax/Micro Interactions。首頁Four Businesses可用Sticky Scroll Story，向下Scroll依序Autron Trade→AuzCare→AutronGo→Quarter Innovations，視覺跟著轉換。Global Map可用Animated Trade Routes（Australia↔Taiwan→China→USA→Japan→Vietnam），Hover Country顯示Market/Business Type/Activities，不可將目標市場假裝成辦公室。
+加入Smooth Scroll/Scroll-triggered Reveal/Text Reveal/Image Reveal/Horizontal Scroll/Sticky Storytelling/Subtle Parallax/Micro Interactions。首頁Four Businesses可用Sticky Scroll Story，向下Scroll依序Autron Trade→AuzCare→Autron Go→Quarter Innovation，視覺跟著轉換。Global Map可用Animated Trade Routes（Australia↔Taiwan→China→USA→Japan→Vietnam），Hover Country顯示Market/Business Type/Activities，不可將目標市場假裝成辦公室。
 
 ## 24. MOTION PERFORMANCE RULE
 所有動畫Subtle/Fast/Purposeful，建議200ms–600ms。不要Heavy 3D/Long Intro/大型自動播放背景影片/Autoplay Sound/過度Parallax。須支援prefers-reduced-motion，設定Reduce Motion時自動降低或取消Parallax/Complex Scroll Motion/Heavy Animations。
@@ -177,7 +177,7 @@ Mobile First，不可只是Desktop縮小。需Hamburger Navigation/Vertical Card
 預留整合Google Search Console/GA4/GTM/Bing Webmaster Tools，Tracking不得破壞Privacy與Performance。
 
 ## 35. AI SEARCH READINESS
-兼顧Google AI Overviews/Generative Search/Answer Engines/AI Assistants。內容須Clearly Structured/Entity Based/Factually Consistent/Easy to Crawl/Easy to Reference。每個Business Page應清楚回答：Who are you? What do you do? Where do you operate? Who do you serve? What services do you provide? How can customers contact you? Entity Relationship：Autron Group→Autron Trade/AuzCare/AutronGo/Quarter Innovations。
+兼顧Google AI Overviews/Generative Search/Answer Engines/AI Assistants。內容須Clearly Structured/Entity Based/Factually Consistent/Easy to Crawl/Easy to Reference。每個Business Page應清楚回答：Who are you? What do you do? Where do you operate? Who do you serve? What services do you provide? How can customers contact you? Entity Relationship：Autron Group→Autron Trade/AuzCare/Autron Go/Quarter Innovation。
 
 ## 36. SECURITY BASELINE
 依目前Web Application Security Best Practices建置，最低基準OWASP Top 10:2025，並以OWASP ASVS 5.0作為Security Verification Framework。
@@ -237,7 +237,7 @@ Frontend：Next.js/React/TypeScript/Tailwind CSS。CMS：Modern Headless/Visual 
 建立CMS Collections：Businesses/Brands/Products/Services/Markets/Distribution Channels/News/Case Studies/Partners/CTA/Contact Details，每個Collection支援中文/英文/SEO/Status/Featured Image/Publish Date。
 
 ## 55. LEAD GENERATION
-每個Business Page使用不同CTA：Autron Trade（Discuss a Trading Opportunity）、AuzCare（Become a Brand Partner）、AutronGo（Request a Freight Quote）、Quarter Innovations（Start a Project）、Global（Partner With Autron）。不要每頁全部都是Contact Us。
+每個Business Page使用不同CTA：Autron Trade（Discuss a Trading Opportunity）、AuzCare（Become a Brand Partner）、Autron Go（Request a Freight Quote）、Quarter Innovation（Start a Project）、Global（Partner With Autron）。不要每頁全部都是Contact Us。
 
 ## 56. ANALYTICS & CONVERSION TRACKING
 追蹤CTA Click/Contact Form Start/Contact Form Submission/Business Page Visits/Language Switching/External Partner Link Clicks，透過GA4/GTM建立Conversion Events。
@@ -255,7 +255,7 @@ Frontend：Next.js/React/TypeScript/Tailwind CSS。CMS：Modern Headless/Visual 
 不要做成「AI一次生成完成但難以維護的網站」。網站須是Scalable/Editable/Secure/SEO-ready/Multilingual/Conversion-focused的Long-term Corporate Digital Platform。Autron Group團隊未來須可自行新增品牌/產品/市場、修改Business Page、更換圖片、修改CTA、調整Homepage Section、建立Landing Page、管理中英文、新增新聞、發布Case Study，而不需每次找Developer。
 
 ## 61. PHASE 1 BUILD SCOPE
-優先完成：Home/About/Autron Trade/AuzCare/AutronGo/Quarter Innovations/Global Network/Contact/Bilingual CMS/Visual Section Builder/SEO Foundation/Security Foundation。暫不做：Large E-commerce/Complex Member Area/ERP Integration/Large CRM/Distributor Portal/Supplier Portal。
+優先完成：Home/About/Autron Trade/AuzCare/Autron Go/Quarter Innovation/Global Network/Contact/Bilingual CMS/Visual Section Builder/SEO Foundation/Security Foundation。暫不做：Large E-commerce/Complex Member Area/ERP Integration/Large CRM/Distributor Portal/Supplier Portal。
 
 ## 62. REQUIRED OUTPUT BEFORE CODING
 正式Coding前先提供：Final Sitemap/Homepage Wireframe/Desktop Navigation/Mobile Navigation/Homepage Section Structure/Individual Business Page Structure/Visual Design Direction/Animation Direction/Colour System/Typography System/CTA Architecture/Chinese Homepage Copy/English Homepage Copy/CMS Architecture/CMS Collections/Bilingual Architecture/SEO Architecture/Security Architecture/Recommended Technical Stack/Hosting Recommendation。（此20項已於 01-PLANNING.md 完成）不要直接進入Coding，先完成Planning，等設計與資訊架構確認後再開始正式建立網站。

@@ -28,7 +28,7 @@ Autron Group 澳創集團官方網站。詳細規劃見同目錄 `01-PLANNING.md
 3. Global Components:Header(含Mega Menu)、Footer、語言切換器
 4. Home 頁面(依 01-PLANNING.md 第2、5節結構)
 5. About 頁面
-6. 四個 Business Unit 頁面:Autron Trade / AuzCare / AutronGo / Quarter Innovations
+6. 四個 Business Unit 頁面:Autron Trade / AuzCare / Autron Go / Quarter Innovation
 7. Global Network 頁面
 8. Contact 頁面(Smart Routing Form)
 9. SEO 基礎(sitemap.xml、robots.txt、metadata、hreflang、結構化資料)

@@ -24,21 +24,24 @@ const businessCards = [
     subtitle: "通路與經銷",
     description: "專注優質商品品牌代理與經銷，打造線上線下整合的多元銷售通路。",
     image: "/business-auzcare.png",
-    href: "/auzcare"
+    href: "https://auzcare.com",
+    external: true
   },
   {
     title: "Autron Go",
     subtitle: "國際物流",
     description: "提供靈活高效的國際物流與跨境運輸服務，協助企業快速連結全球市場。",
     image: "/business-autrongo.png",
-    href: "/autrongo"
+    href: "https://papa-k.com",
+    external: true
   },
   {
-    title: "Quarter Innovations",
+    title: "Quarter Innovation",
     subtitle: "科技與數位服務",
     description: "結合網站開發、數位行銷與創新科技，協助企業打造品牌並加速數位成長。",
     image: "/business-quarter.png",
-    href: "/quarter-innovations"
+    href: "https://quarter.com.tw",
+    external: true
   }
 ];
 
@@ -58,9 +61,9 @@ const statistics = [
 
 const heroBusinessLinks = [
   { label: "貿易合作", href: "/autron-trade", icon: 0 },
-  { label: "通路經銷", href: "/auzcare", icon: 2 },
-  { label: "物流諮詢", href: "/autrongo", icon: 3 },
-  { label: "科技行銷", href: "/quarter-innovations", icon: 1 }
+  { label: "通路經銷", href: "https://auzcare.com", icon: 2 },
+  { label: "物流諮詢", href: "https://papa-k.com", icon: 3 },
+  { label: "科技行銷", href: "https://quarter.com.tw", icon: 1 }
 ];
 
 const markets = [
@@ -113,26 +116,28 @@ export default function Home() {
             <div className="hidden lg:block" aria-hidden="true" />
           </div>
 
-          <div className="absolute inset-y-0 right-3 z-[1] flex items-center justify-center lg:right-6">
-            <div className="flex w-[5rem] items-center justify-center rounded-xl bg-[#1E5FCD] p-[0.8rem] text-white shadow-[0_18px_40px_rgba(7,19,52,0.2)] backdrop-blur-sm sm:w-[5.2rem] lg:w-[5rem]">
-              <div className="flex w-full flex-col justify-center gap-[0.5rem]">
-                {heroBusinessLinks.map((business) => (
-                  <HoverLift
-                    key={business.href}
-                    href={business.href}
-                    liftX={-10}
-                    className="group flex flex-col items-center gap-[0.2rem] py-[0.4rem] text-center last:border-0"
-                  >
-                    <CapabilityIcon index={business.icon} className="h-[2.5rem] w-[2.5rem] text-white transition-all duration-200 group-hover:scale-110 group-hover:text-[#dbeafc] group-focus-visible:scale-110 group-focus-visible:text-[#dbeafc]" />
-                    <span className="block text-[0.8rem] font-medium leading-tight text-white">{business.label}</span>
-                  </HoverLift>
-                ))}
-              </div>
-            </div>
-          </div>
         </HeroVisual>
 
-        <StaggerContainer className="relative z-[2] mx-auto mt-[-4rem] mb-2xl grid max-w-[68rem] grid-cols-1 overflow-hidden rounded-2xl border border-line bg-white shadow-xl sm:grid-cols-2 lg:grid-cols-4" stagger={0.08} amount={0.4}>
+        <aside aria-label="事業快捷選單" className="fixed right-3 top-1/2 z-40 flex -translate-y-1/2 items-center justify-center lg:right-6">
+          <div className="flex w-[5rem] items-center justify-center rounded-xl bg-[#1E5FCD] p-[0.8rem] text-white shadow-[0_12px_28px_rgba(7,19,52,0.26)] backdrop-blur-sm sm:w-[5.2rem] lg:w-[5rem]">
+            <div className="flex w-full flex-col justify-center gap-[0.5rem]">
+              {heroBusinessLinks.map((business) => (
+                <HoverLift
+                  key={business.href}
+                  href={business.href}
+                  liftX={0}
+                  liftY={0}
+                  className="group flex flex-col items-center gap-[0.2rem] py-[0.4rem] text-center last:border-0"
+                >
+                  <CapabilityIcon index={business.icon} className="h-[2.35rem] w-[2.35rem] text-white transition-all duration-200 group-hover:scale-110 group-hover:text-[#dbeafc] group-focus-visible:scale-110 group-focus-visible:text-[#dbeafc]" />
+                  <span className="block text-[0.76rem] font-medium leading-tight text-white transition-transform duration-200 group-hover:scale-110 group-focus-visible:scale-110">{business.label}</span>
+                </HoverLift>
+              ))}
+            </div>
+          </div>
+        </aside>
+
+        <StaggerContainer className="relative z-[2] mx-auto mt-[-4rem] mb-2xl grid w-[calc(100%-2rem)] max-w-[76rem] grid-cols-1 overflow-hidden rounded-2xl border border-line bg-white shadow-xl sm:grid-cols-2 lg:grid-cols-4" stagger={0.08} amount={0.4}>
             {statistics.map((stat) => (
               <StaggerItem
                 key={stat.label}
@@ -140,12 +145,12 @@ export default function Home() {
                 className="relative flex items-center justify-center border-b border-line bg-white px-[1.5rem] py-[1.4rem] text-center last:border-b-0 sm:border-b-0 lg:px-[2.25rem] sm:[&:not(:last-child)]:after:absolute sm:[&:not(:last-child)]:after:right-0 sm:[&:not(:last-child)]:after:top-1/2 sm:[&:not(:last-child)]:after:h-9 sm:[&:not(:last-child)]:after:w-px sm:[&:not(:last-child)]:after:-translate-y-1/2 sm:[&:not(:last-child)]:after:bg-line sm:[&:not(:last-child)]:after:content-['']"
               >
                 <div className="flex items-center justify-center gap-2xl">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#edf4ff] text-[#236FD9] ring-1 ring-[#dbeafc]">
-                    <StatIcon index={stat.icon} className="h-6 w-6" />
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center text-[#236FD9]">
+                    <StatIcon index={stat.icon} className={stat.icon === 3 ? "h-10 w-10 max-sm:h-12 max-sm:w-12" : "h-10 w-10"} />
                   </div>
                   <div className="min-w-0 text-center">
-                    <AnimatedCounter value={stat.value} className="font-display text-[1.7rem] font-extrabold leading-none text-[#236FD9]" />
-                    <p className="mt-1 text-[0.75rem] font-semibold text-navy">{stat.label}</p>
+                    <AnimatedCounter value={stat.value} className={`font-display font-extrabold leading-none text-[#236FD9] ${stat.value === "∞" ? "text-[3rem]" : "text-[2rem]"}`} />
+                    <p className="mt-1 text-[0.9rem] font-semibold text-navy">{stat.label}</p>
                   </div>
                 </div>
               </StaggerItem>
@@ -163,7 +168,7 @@ export default function Home() {
         <StaggerContainer className="mt-2xl grid gap-xl lg:grid-cols-4" stagger={0.1} amount={0.15}>
           {businessCards.map((card) => (
             <StaggerItem key={card.title}>
-              <Link href={card.href} className="group flex h-full flex-col overflow-hidden rounded-md border border-line bg-white shadow-md transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-2 hover:shadow-lg focus-visible:-translate-y-2 focus-visible:shadow-lg">
+              <Link href={card.href} target={card.external ? "_blank" : undefined} rel={card.external ? "noopener noreferrer" : undefined} className="group flex h-full flex-col overflow-hidden rounded-md border border-line bg-white shadow-md transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-2 hover:shadow-lg focus-visible:-translate-y-2 focus-visible:shadow-lg">
                 <div className="relative h-36 w-full shrink-0 overflow-hidden bg-surface-off">
                   <Image src={card.image} alt={card.title} fill sizes="(min-width: 1024px) 25vw, 100vw" className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.04] group-focus-visible:scale-[1.04]" />
                   <span className="absolute left-0 top-0 flex h-11 w-[104px] items-center bg-primary pl-lg font-display text-lg font-bold text-white transition-transform duration-300 ease-out [clip-path:polygon(0_0,100%_0,calc(100%-28px)_100%,0_100%)] group-hover:scale-[1.05] group-focus-visible:scale-[1.05]">
@@ -184,7 +189,7 @@ export default function Home() {
         </StaggerContainer>
       </section>
 
-      <section aria-labelledby="capabilities-heading" className="bg-navy px-[clamp(1.5rem,3vw,3rem)] py-3xl text-white">
+      <section aria-labelledby="capabilities-heading" className="bg-[#1453b8] px-[clamp(1.5rem,3vw,3rem)] py-3xl text-white">
         <div className="mx-auto grid max-w-content gap-3xl lg:grid-cols-[1.46fr_0.54fr] lg:items-center">
           <div>
             <Reveal>
@@ -206,8 +211,8 @@ export default function Home() {
                 if (index === capabilities.length - 1) return [item];
                 return [
                   item,
-                  <StaggerItem key={`arrow-${index}`} y={0} duration={0.3} className="hidden h-16 shrink-0 items-center text-lg text-white/30 lg:flex" aria-hidden="true">
-                    →
+                  <StaggerItem key={`arrow-${index}`} y={0} duration={0.3} className="hidden h-16 shrink-0 items-center text-xl font-bold text-white/45 lg:flex" aria-hidden="true">
+                    ➜
                   </StaggerItem>
                 ];
               })}
@@ -219,8 +224,8 @@ export default function Home() {
             <p className="mt-lg text-base leading-relaxed text-charcoal/80">
               連結澳洲、台灣與全球市場，創造商業價值，成就合作夥伴。
             </p>
-            <Link href="/contact" className="group mt-xl flex items-center justify-between gap-md rounded-lg bg-navy px-lg py-md text-sm font-semibold text-white transition-colors duration-200 hover:bg-navy-light">
-              成為我們的合作夥伴 <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+            <Link href="/contact" className="group mt-xl flex items-center justify-between gap-md rounded-lg bg-[#1453B8] px-lg py-md text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#0f4196]">
+              成為我們的合作夥伴 <span aria-hidden="true" className="text-xl font-bold leading-none transition-transform duration-200 group-hover:translate-x-1">➜</span>
             </Link>
           </Reveal>
         </div>

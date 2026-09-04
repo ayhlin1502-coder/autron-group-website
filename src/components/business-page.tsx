@@ -27,7 +27,7 @@ function ContentList({ items }: { items: string[] }) {
 export function BusinessPage({ data }: { data: BusinessPageData }) {
   return (
     <main>
-      <section className="bg-surface-off px-lg py-4xl" aria-labelledby="business-hero-heading">
+      <section className="flex h-[70vh] items-center bg-surface-off px-lg py-4xl md:h-[75vh] lg:h-[78vh]" aria-labelledby="business-hero-heading">
         <div className="mx-auto max-w-content">
           <p className="mb-lg text-sm font-semibold uppercase tracking-[0.2em] text-primary">{data.eyebrow}</p>
           <h1 id="business-hero-heading" className="max-w-5xl font-display text-display font-bold text-navy">{data.hero}</h1>

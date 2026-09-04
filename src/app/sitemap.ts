@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://127.0.0.1:3100";
 
 const routes = [
   "",
@@ -10,7 +10,15 @@ const routes = [
   "/autrongo",
   "/quarter-innovations",
   "/global-network",
-  "/contact"
+  "/contact",
+  "/en",
+  "/en/about",
+  "/en/autron-trade",
+  "/en/auzcare",
+  "/en/autrongo",
+  "/en/quarter-innovations",
+  "/en/global-network",
+  "/en/contact"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -18,6 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: route === "" ? 1 : 0.8
+    priority: route === "" || route === "/en" ? 1 : 0.8
   }));
 }
