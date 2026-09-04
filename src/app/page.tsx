@@ -118,7 +118,7 @@ export default function Home() {
 
         </HeroVisual>
 
-        <aside aria-label="事業快捷選單" className="fixed right-3 top-1/2 z-40 flex -translate-y-1/2 items-center justify-center lg:right-6">
+        <aside aria-label="事業快捷選單" className="fixed right-6 top-1/2 z-40 hidden -translate-y-1/2 items-center justify-center lg:flex">
           <div className="flex w-[5rem] items-center justify-center rounded-xl bg-[#1E5FCD] p-[0.8rem] text-white shadow-[0_12px_28px_rgba(7,19,52,0.26)] backdrop-blur-sm sm:w-[5.2rem] lg:w-[5rem]">
             <div className="flex w-full flex-col justify-center gap-[0.5rem]">
               {heroBusinessLinks.map((business) => (
@@ -137,15 +137,15 @@ export default function Home() {
           </div>
         </aside>
 
-        <StaggerContainer className="relative z-[2] mx-auto mt-[-4rem] mb-2xl grid w-[calc(100%-2rem)] max-w-[76rem] grid-cols-1 overflow-hidden rounded-2xl border border-line bg-white shadow-xl sm:grid-cols-2 lg:grid-cols-4" stagger={0.08} amount={0.4}>
+        <StaggerContainer className="relative z-[2] mx-auto mt-[-4rem] mb-2xl grid w-[calc(100%-2rem)] max-w-[76rem] grid-cols-2 overflow-hidden rounded-2xl border border-line bg-white shadow-xl lg:grid-cols-4" stagger={0.08} amount={0.4}>
             {statistics.map((stat) => (
               <StaggerItem
                 key={stat.label}
                 y={12}
-                className="relative flex items-center justify-center border-b border-line bg-white px-[1.5rem] py-[1.4rem] text-center last:border-b-0 sm:border-b-0 lg:px-[2.25rem] sm:[&:not(:last-child)]:after:absolute sm:[&:not(:last-child)]:after:right-0 sm:[&:not(:last-child)]:after:top-1/2 sm:[&:not(:last-child)]:after:h-9 sm:[&:not(:last-child)]:after:w-px sm:[&:not(:last-child)]:after:-translate-y-1/2 sm:[&:not(:last-child)]:after:bg-line sm:[&:not(:last-child)]:after:content-['']"
+                className="relative flex items-center justify-center border-b border-line bg-white px-md py-lg text-center even:border-l even:border-line last:border-b-0 lg:border-b-0 lg:px-[2.25rem] lg:even:border-l-0 lg:[&:not(:last-child)]:after:absolute lg:[&:not(:last-child)]:after:right-0 lg:[&:not(:last-child)]:after:top-1/2 lg:[&:not(:last-child)]:after:h-9 lg:[&:not(:last-child)]:after:w-px lg:[&:not(:last-child)]:after:-translate-y-1/2 lg:[&:not(:last-child)]:after:bg-line lg:[&:not(:last-child)]:after:content-['']"
               >
-                <div className="flex items-center justify-center gap-2xl">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center text-[#236FD9]">
+                <div className="flex flex-col items-center justify-center gap-sm sm:flex-row sm:gap-lg">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center text-[#236FD9] sm:h-14 sm:w-14">
                     <StatIcon index={stat.icon} className={stat.icon === 3 ? "h-10 w-10 max-sm:h-12 max-sm:w-12" : "h-10 w-10"} />
                   </div>
                   <div className="min-w-0 text-center">

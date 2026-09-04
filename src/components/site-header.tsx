@@ -153,7 +153,7 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <nav aria-label="Mobile navigation" className="border-t border-line bg-white px-lg py-md lg:hidden">
+        <nav aria-label="Mobile navigation" className="max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-line bg-white px-lg py-md lg:hidden">
           <div className="flex flex-col">
             {localizedStandardLinks.slice(0, 2).map((link) => (
               <Link key={link.href} href={link.href} onClick={closeMenu} className="border-b border-line py-md text-lg font-semibold text-navy">

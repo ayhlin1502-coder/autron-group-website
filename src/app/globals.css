@@ -15,6 +15,7 @@
 html {
   background: #ffffff;
   color: hsl(var(--color-foreground));
+  overflow-x: clip;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   background: #ffffff;
   font-family: "Inter", "Noto Sans TC", Arial, sans-serif;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 .hero-image-clip {
