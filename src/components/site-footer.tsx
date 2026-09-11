@@ -41,11 +41,6 @@ export function SiteFooter() {
           <p className="mt-lg text-sm leading-7 text-charcoal/70">
             {isEnglish ? "Autron Group connects Australia, Taiwan and global markets through international trade, brand distribution, logistics and technology services." : "澳創集團致力於連結澳洲、台灣與全球市場，透過國際貿易、品牌經銷、國際物流與科技服務，創造商業價值，成就合作夥伴。"}
           </p>
-          <div className="mt-lg flex items-center gap-md" aria-label="官方社群連結待提供">
-            <SocialPlaceholder label="LinkedIn" path="M14 14h4v4h-4zM14 21h4v13h-4zM21 21h4v2c1-2 3-3 6-3 5 0 7 3 7 8v6h-4v-5c0-3 0-5-3-5s-4 2-4 5v5h-4V21z" />
-            <SocialPlaceholder label="Facebook" path="M27 10h5v5h-5v4h5v5h-5v10h-5V24h-4v-5h4v-4c0-3 2-5 5-5z" />
-            <SocialPlaceholder label="YouTube" path="M10 15c0-2 2-4 4-4h20c2 0 4 2 4 4v10c0 2-2 4-4 4H14c-2 0-4-2-4-4V15zM22 16v8l8-4-8-4z" />
-          </div>
         </div>
 
         <div className="grid flex-1 grid-cols-2 gap-x-lg gap-y-2xl sm:grid-cols-[1fr_1fr_1fr_auto_1fr]">
@@ -105,16 +100,6 @@ export function SiteFooter() {
         </div>
       </div>
     </footer>
-  );
-}
-
-function SocialPlaceholder({ label, path }: { label: string; path: string }) {
-  return (
-    <span role="img" aria-label={`${label}（連結待提供）`} className="cursor-not-allowed text-charcoal/35" title={`${label}（連結待提供）`}>
-      <svg aria-hidden="true" className="h-8 w-8" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d={path} fill="currentColor" />
-      </svg>
-    </span>
   );
 }
 

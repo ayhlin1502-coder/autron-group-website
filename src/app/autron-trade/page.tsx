@@ -180,9 +180,6 @@ export default function AutronTradePage() {
             <h2 id="products-heading" className="font-display text-4xl font-bold text-navy sm:text-5xl">多元優質產品，滿足全球需求</h2>
             <p className="mt-sm max-w-2xl text-base text-charcoal/70">從天然健康、優質美食到醫療保健，為全球客戶提供高品質、具競爭力的產品。</p>
           </Reveal>
-          <Link href="/autron-trade" className="hidden shrink-0 text-sm font-semibold text-primary underline-offset-4 hover:underline sm:inline-flex">
-            查看更多產品 <span aria-hidden="true" className="ml-xs">→</span>
-          </Link>
         </div>
 
         <div className="mt-2xl">
@@ -229,9 +226,6 @@ export default function AutronTradePage() {
                 </li>
               ))}
             </ul>
-            <Link href="/global-network" className="mt-lg inline-flex items-center gap-xs rounded-md border border-line px-lg py-sm text-sm font-semibold text-primary transition-colors duration-200 hover:bg-primary hover:text-white">
-              探索全球市場 <span aria-hidden="true">→</span>
-            </Link>
           </Reveal>
 
           <Reveal delay={0.1} className="relative aspect-[1634/894] w-full overflow-hidden">
