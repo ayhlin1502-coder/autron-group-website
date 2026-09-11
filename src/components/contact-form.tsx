@@ -76,7 +76,7 @@ export function ContactForm() {
         <Field id="business-type" label={isEnglish ? "Business Type" : "公司類型"} />
       </div>
 
-      <Field id="enquiry-category" label={isEnglish ? "Enquiry Category" : "詢問類別"} maxLength={120} />
+      <Field id="enquiry-category" label={isEnglish ? "Message Subject" : "訊息標題"} maxLength={120} />
       <div>
         <label htmlFor="message" className="mb-sm block text-sm font-semibold text-charcoal">{isEnglish ? "Message" : "訊息內容"} <span aria-hidden="true" className="text-primary">*</span></label>
         <textarea id="message" name="message" required maxLength={5000} rows={6} className="w-full resize-y rounded-md border border-line bg-white px-md py-md text-sm text-charcoal outline-none transition-colors duration-fast focus:border-primary focus:ring-2 focus:ring-primary/20" />
