@@ -1,6 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "autrontrade.com" }],
+        destination: "https://autron.xyz/autron-trade",
+        permanent: true
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.autrontrade.com" }],
+        destination: "https://autron.xyz/autron-trade",
+        permanent: true
+      }
+    ];
+  },
   async headers() {
     return [
       {
